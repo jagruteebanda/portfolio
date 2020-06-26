@@ -1,20 +1,32 @@
 import React, { useState } from 'react';
 import ProfessionalExperience from '../components/ProfessionalExperience';
 import TechnicalStuff from '../components/TechnicalStuff';
+import ResearchWork from '../components/ResearchWork';
+import MyBlog from '../components/MyBlog';
+import TravelDiaries from '../components/TravelDiaries';
+import ArtGallery from '../components/ArtGallery';
 
 import '../styles/Home.css';
 import tabsData from '../data/infoTabs';
 
 function Home() {
 
-      const [tabName, setTabName] = useState('About Me');
+      const [tabName, setTabName] = useState('Professional Experience');
 
       const renderTabData = () => {
-            switch(tabName) {
+            switch (tabName) {
                   case 'Technical Stuff':
                         return <TechnicalStuff />;
-                  case 'Professional Experience': 
-                  default: 
+                  case 'Research Work':
+                        return <ResearchWork />;
+                  case 'My Blog':
+                        return <MyBlog />;
+                  case 'Travel Diaries':
+                        return <TravelDiaries />;
+                  case 'Art Gallery':
+                        return <ArtGallery />;
+                  case 'Professional Experience':
+                  default:
                         return <ProfessionalExperience />
             }
       }
@@ -42,9 +54,9 @@ function Home() {
                   <div className="home-info-tabs">
                         {
                               tabsData.map((item, i) =>
-                                    <div className="info-tab" 
-                                          style={{ 
-                                                backgroundColor: (tabName === item.name) ? 'blue' : '#fff',
+                                    <div key={`tabItem_${item.name}`} className="info-tab"
+                                          style={{
+                                                backgroundColor: (tabName === item.name) ? '#33cccc' : '#fff',
                                                 color: (tabName === item.name) ? '#fff' : '#000'
                                           }}
                                           onClick={() => setTabName(item.name)}

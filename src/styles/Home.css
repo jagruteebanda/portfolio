@@ -70,6 +70,7 @@
             width: fit-content;
             margin-top: 18vh;
       }
+
 }
 
 .name {
@@ -91,9 +92,11 @@
       display: flex;
       width: 100%;
       height: 40px;
+      padding: 5px;
       /* margin: 0; */
       align-items: center;
       justify-content: center;
+      cursor: pointer;
 }
 
 .tab-name {
@@ -103,5 +106,13 @@
 .info-data {
       width: 100%;
       height: 95vh;
-      background-color: rgb(226, 243, 193);
+      background-color: #fffff8;
+}
+
+@media screen and (max-width: 450px) {
+      .home-info-tabs {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-evenly; */
+      }
 }
