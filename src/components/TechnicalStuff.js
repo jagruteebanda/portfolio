@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/TechnicalStuff.css';
 import projectsData from '../data/projectsData';
 
@@ -7,7 +7,7 @@ function TechnicalStuff() {
     <div className="technical-stuff">
       {
         projectsData.map((item, i) =>
-          <div className="project-info">
+          <div className="project-info" key={`project_info_${i}`}>
             <img className="project-img" src={require('../images/project-bg.png')} alt={item.projectName} />
             <div className="project-data">
               <span className="project-name">{item.projectName}</span>
