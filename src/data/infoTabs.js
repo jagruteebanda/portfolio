@@ -11,9 +11,9 @@ const tabs = [
       {
             name: 'My Blog'
       },
-      {
-            name: 'Travel Diaries'
-      },
+      // {
+      //       name: 'Travel Diaries'
+      // },
       {
             name: 'Art Gallery'
       }

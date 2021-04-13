@@ -1,11 +1,11 @@
 const projectsData = [
-      {
-            projectName: "Mood Indicator",
-            technologiesUsed: "React Native JS, Mendix",
-            projectLink: "",
-            projectDescription: `An React Native app with Mendix as a backend that updates the mood responses of your current working team at the start of the day and let's the Manager know if something is professionally wrong with the member and if anything can be done to solve the team member's issue.`,
-            img: "../images/project-bg.png"
-      },
+      // {
+      //       projectName: "Mood Indicator",
+      //       technologiesUsed: "React Native JS, Mendix",
+      //       projectLink: "",
+      //       projectDescription: `An React Native app with Mendix as a backend that updates the mood responses of your current working team at the start of the day and let's the Manager know if something is professionally wrong with the member and if anything can be done to solve the team member's issue.`,
+      //       img: "../images/project-bg.png"
+      // },
       {
             projectName: "Vaikunth Dham",
             technologiesUsed: "React Native JS",
@@ -13,14 +13,14 @@ const projectsData = [
             projectDescription: `An application featuring spiritual work such as Shri Manache Shlok and Dasbodh by Samarth Ramdas Swami, Sadguru Charitra by Nrusimha Saraswati, Shivleelamrut by Shridhar Swami Nazarekar, Aarti Sangraha and Upasana screen to do Namasmaran. It also features text sharing option along with font increase / decrease option.`,
             img: "../images/project-bg.png"
       },
-      {
-            projectName: "User Manual Nirvana – A smart way to manage user manuals",
-            technologiesUsed: "Express JS, Node JS, TensorFlow",
-            projectLink: "",
-            projectDescription: `Lead full-stack developer in a mobile application with real-time image classification using TensorFlow and extraction
-            of PDFs to HTML files for less loading time, easy retrieval and less storage space.`,
-            img: "../images/project-bg.png"
-      },
+      // {
+      //       projectName: "User Manual Nirvana – A smart way to manage user manuals",
+      //       technologiesUsed: "Express JS, Node JS, TensorFlow",
+      //       projectLink: "",
+      //       projectDescription: `Lead full-stack developer in a mobile application with real-time image classification using TensorFlow and extraction
+      //       of PDFs to HTML files for less loading time, easy retrieval and less storage space.`,
+      //       img: "../images/project-bg.png"
+      // },
       {
             projectName: "IMService",
             technologiesUsed: "Angular v8, React Native JS, Node JS",

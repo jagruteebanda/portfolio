@@ -37,7 +37,7 @@ function Home() {
                         <img className="home-header-img" src={require('../images/bg.png')} />
                   </div>
                   <div className="home-info">
-                        <div className="home-info-image">
+                        <div className="home-info-image" onMouseDown={e => e.preventDefault()} onContextMenu={e => e.preventDefault()}>
                               <img className="info-image" src={require('../images/myself.png')} />
                         </div>
                         <div className="home-info-data">
