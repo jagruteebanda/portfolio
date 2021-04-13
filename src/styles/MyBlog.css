@@ -1,0 +1,93 @@
+.my-blog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 98%;
+  margin-top: 20px;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+
+.blog-post-card {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  max-height: 20%;
+  border-width: 1px;
+  border-color: #1a1919;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.blog-post-card-header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  padding: 0.5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-post-card-content {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  padding-right: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 600px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /*  Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+
+::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+.blog-post-card-title {
+  font-size: 25px;
+}
+
+.blog-post-card-description, p {
+  /* font-family: 'Times New Roman', Times, serif; */
+  text-align: justify;
+}
+
+.read-more-view {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.read-more-button {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #e6ffff;
+  border-radius: 4px;
+}
+
+/* .read-more-button>a {} */
+
+@media screen and (max-width: 450px) {
+  .my-blog {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    /* justify-content: space-evenly; */
+  }
+  .project-info {
+    width: 85%;
+  }
+}
