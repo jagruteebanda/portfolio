@@ -19,7 +19,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 20px;
   margin-bottom: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
 }
 
 .blog-post-card-header {
@@ -42,7 +42,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 1px;
   /* Remove scrollbar space */
   background: transparent;
   /*  Optional: just make scrollbar invisible */
@@ -73,9 +73,14 @@
 
 .read-more-button {
   text-decoration: none;
-  padding: 10px;
-  background-color: #e6ffff;
-  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #5cd6d6;
+  font-size: small;
+  color: #000;
+  /* border-radius: 4px; */
 }
 
 /* .read-more-button>a {} */

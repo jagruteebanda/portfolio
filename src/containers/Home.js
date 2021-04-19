@@ -34,7 +34,7 @@ function Home() {
       return (
             <div className="home">
                   <div className="home-header">
-                        <img className="home-header-img" src={require('../images/bg.png')} />
+                        <img className="home-header-img" src={require('../images/bg-1.jpeg')} />
                   </div>
                   <div className="home-info">
                         <div className="home-info-image" onMouseDown={e => e.preventDefault()} onContextMenu={e => e.preventDefault()}>
@@ -56,8 +56,8 @@ function Home() {
                               tabsData.map((item, i) =>
                                     <div key={`tabItem_${item.name}`} className="info-tab"
                                           style={{
-                                                backgroundColor: (tabName === item.name) && '#0099cc',
-                                                color: (tabName === item.name) ? '#fff' : '#000'
+                                                backgroundColor: (tabName === item.name) && '#5cd6d6',
+                                                color: (tabName === item.name) ? '#000' : '#fff'
                                           }}
                                           onClick={() => setTabName(item.name)}
                                     >

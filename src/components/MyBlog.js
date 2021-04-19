@@ -36,7 +36,7 @@ class MyBlog extends Component {
 								<h3 className="blog-post-card-title">{item.title}</h3>
 							</div>
 							<div className="blog-post-card-content" dangerouslySetInnerHTML={{ __html: item.description }} /> 
-							<div className="read-more-view"><a href={item.link} target="_blank" className="read-more-button">Read more</a></div>
+							<div className="read-more-view"><a href={item.link} target="_blank" rel="noopener noreferrer" className="read-more-button">Read more</a></div>
 						</div>)
 				}
 			</div>
